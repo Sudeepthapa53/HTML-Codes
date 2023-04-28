@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>Online Survey</title>
+<style>
+	body {background-color:wheat}
+	h1   {text-align: center;}
+	h2   {text-align: center;}
+
+div{
+   float:left; 
+   width:70%;
+    color:rgb(5, 70, 5);
+}
+img   {width: 75%; height: auto; border-radius: 20%; padding-right: 15%; }
+.img_text {display: flex; align-items: center; flex-direction: row; padding-left: 20%; padding-right: 20%}
+.buttons {text-align: left; padding-left: 350px}
+
+table   {margin-right: auto; margin-left: auto; max-width: 60%; }
+th    {font-size: 125%; }
+h1,h2{
+   text-align:center;
+   color:rgb(5, 70, 5);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+opacity: 1
+}
+
+ ul {
+   margin-right:auto;
+   margin-left:auto;
+   max-width:200px;
+ }
+
+  
+ li {
+   color:#8B008B;
+   }
+ 
+  ol {
+   margin-right:auto;
+   margin-left:auto;
+   max-width:480px;
+ }
+
+
+</style>
+</head>
+
+<body>
+    <h1 style="color:rgb(153, 4, 4);">Thank You For Choosing Oven Fresh Bakery</h1>
+<div class="img_text" > 
+You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences with Oven Fresh Bakery. To show our appreciation, we will send you a $5 OvenFresh Bakery eGift Certificate via e-mail.
+<img src="ovenfresh_logo.png" alt="ovenfresh logo" style="width:20%; padding-left:2%; padding-right: 2%;">
+</div>
+
+
+<br>
+<hr>
+
+<h2>Personal Information</h2>
+<form>
+<table>
+
+<tr>
+<td>First Name:</td><td> <input type="text" name="fname"></td>
+<td>Last Name:</td><td> <input type="text" name="lname"></td>
+</tr>
+<tr>
+<td>E-mail Address:</td><td> 
+  <input type="email" name="email"></td>
+</tr>
+<tr>
+<td>Gender:</td><td> Male<input type="radio" name="gender" value="male">
+&nbsp; Female<input type="radio" name="gender" value="female"></td>
+</tr>
+<tr>
+<td>Age Group:</td><td colspan="2"> Under 21<input type="radio" name="age" value="under21">
+21-40<input type="radio" name="age" value="21-40">
+Over 40<input type="radio" name="age" value="over40">
+</td>
+</tr>
+</table>
+
+
+<hr>
+
+<br>
+<h2>Please respond to the opinion statements using the following scale:</h2>
+<ul style="list-style:none;">
+<li>1 = strongly agree</li>
+<li>2 = somewhat agree</li>
+<li>3 = neither agree nor disagree</li>
+<li>4 = somewhat disagree</li>
+<li>5 = strongly disagree</li>
+</ul>
+
+<ol>
+<li>Oven Fresh Bakery products are always fresh. <input type="number" min="1" max="5"></li>
+<li>Oven Fresh Bakery products are decorated in an elegant way. <input type="number" min="1" max="5"></li>
+<li>Oven Fresh Bakery products are resonably priced. <input type="number" min="1" max="5"></li>
+<li>Oven Fresh Bakery products are of the highest quality. <input type="number" min="1" max="5"></li>
+<li>Overall, I am very satisfied with Oven Fresh Bakery products. <input type="number" min="1" max="5"></li>
+</ol>
+<div class="buttons"> 
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</div>
+</form>
+</body>
+</html>

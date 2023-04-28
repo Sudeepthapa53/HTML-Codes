@@ -1,0 +1,83 @@
+[
+    {
+        "prodID": 1,
+        "prodImg":"BananaBread.jpg",
+        "prodName": "Banana Bread",
+        "prodDesc": "Banana Bread is a very popular bread made from eggs, flour, sugar, lemon juice, baking powder, pecans, and banana.",
+        "prodPrice": 4.49
+    },
+
+    {
+        "prodID": 2,
+        "prodImg":"Fruitcake.jpg",
+        "prodName": "Fruti Cake",
+        "prodDesc": "A famous type of bread made from dry fruits such as ripe cherries, nuts, flour, sugar, eggs, and baking powder.",
+        "prodPrice": 3.99
+    },
+
+    {
+        "prodID": 3,
+        "prodImg": "BlackForestCake.jpg",
+        "prodName": "Black Forest Cake",
+        "prodDesc": "A large chocolate cake made with layers of chocoloate cake, cherries and chocolate slates.",
+        "prodPrice": 16.99
+    },
+
+    {
+        "prodID": 4,
+        "prodImg":"WhiteForestCake.jpg",
+        "prodName": "White Forest Cake",
+        "prodDesc": "A large vanilla cake made with white chocolate, whipped cream and cherries on top.",
+        "prodPrice": 15.99
+    },
+
+    {
+        "prodID": 5,
+        "prodImg":"Lakhamari.png",
+        "prodName": "Lakhamari",
+        "prodDesc": "Lakhamari is a famous newari/nepali sweet which can be made both crunchy and spongy using rice flour, sesame seeds and sugar.",
+        "prodPrice": 1.99
+    },
+
+    {
+        "prodID": 6,
+        "prodImg": "CheeseDanish.jpg",
+        "prodName": "Cheese Danish",
+        "prodDesc": "A classic flaky Danish pastry crust filled with cream cheese and topped with a drizzle of icing for savory-sweet taste.",
+        "prodPrice": 2.49
+    },
+
+    {
+        "prodID": 7,
+        "prodImg": "Donuts.jpg",
+        "prodName":"Donuts",
+        "prodDesc": "A Nepalese donut is a deep fried doughnut made with yeast and white flour known as Maida or all purpose flour.",
+        "prodPrice": 1.49
+    },
+
+    {
+        "prodID": 8,
+        "prodImg": "Bagels.jpeg",
+        "prodName": "Bagels",
+        "prodDesc": "bagel, doughnut-shaped yeast-leavened roll that is characterized by a crisp, shiny crust and a dense interior.",
+        "prodPrice": 2.99
+    },
+
+    {
+        "prodID": 9,
+        "prodImg": "NepaliCoffee.jpg",
+        "prodName": "Nepali Coffee",
+        "prodDesc": "A Nepali coffee is a coffee made with mostly milk and a table spoon nescafe coffee swirled in it .",
+        "prodPrice": 4.00
+    },
+
+    {
+        "prodID": 10,
+        "prodImg": "Teabag.png",
+        "prodName": "Tea Bag",
+        "prodDesc": "Our tea leaves are hand picked in Ilam from Nepal and granulated for tea bags and sealed.",
+        "prodPrice": 1.49
+    }
+
+   
+]

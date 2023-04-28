@@ -1,0 +1,31 @@
+.menuDiv{
+    width: 90%;
+    margin:auto;
+}
+
+
+table.menuTable{
+margin:auto;
+text-align: center;
+width: 90%;
+line-height:50px;
+border-style:inset;
+border-width: thick;
+border-color: rgb(153, 4, 4);
+}
+
+tr a  {
+font-size:  1.5em;
+display: block;
+color:rgb(5, 70, 5);
+text-decoration:none;
+font-family:'Times New Roman', Times, serif;
+font-weight: 500;
+text-align: center;
+}
+
+td a:hover {
+background-color: rgb(5, 70, 5);
+color: rgb(153, 4, 4);
+text-decoration: blink;
+}

@@ -1,0 +1,26 @@
+.tbodyRows
+{
+    border: solid;
+    table-layout: fixed;
+    color: darkgreen;
+}
+
+
+.productRow
+{
+	padding: auto;
+    border:solid;
+    height: 50px;
+}
+
+.prod
+{
+    border: solid;
+    height: 50px;
+    color: darkgreen;
+}
+
+img{
+    
+    width: 190px;
+}

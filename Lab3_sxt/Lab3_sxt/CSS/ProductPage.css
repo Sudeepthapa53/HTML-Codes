@@ -1,0 +1,42 @@
+body	{
+    background-color:wheat;
+    padding-right:10%;
+    padding-left: 10%;}
+
+h1{
+    text-align: center;
+    color:rgb(153, 4, 4);
+}
+h2{
+    text-align: left;
+    font-size: 1.8em;
+    color:rgb(153, 4, 4);
+    padding-left: 43%;
+}
+
+a.title{
+    text-decoration-line: underline; 
+    color: rgb(153, 4, 4); 
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.buttons{
+    width: 80%;
+    text-align: right;
+}
+.logo{
+    float: right;
+    margin:auto;
+    width: 130px;
+    padding-right: 20%;
+    padding-bottom: 30px;
+}
+table{
+    float:center;
+}
+
+.clicktoSort{
+            text-align: center;
+            padding-left: 13%;
+}

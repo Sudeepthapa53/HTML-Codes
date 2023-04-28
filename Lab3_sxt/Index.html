@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oven Fresh</title>
+    <link rel="stylesheet" href="CSS/Sudeep.css">
+    <link rel="stylesheet" href="CSS/MenuStyle.css">
+    <script>
+        
+        window.onload = function() {
+            
+            function createCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+            
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+            
+            
+            if(person=readCookie("person")) {
+                
+                document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your Oven Fresh Bakery experience!"
+                document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+
+            } else {
+                
+                document.getElementById("providename").innerText = "Please click here to provide your name."
+            }
+            
+            document.getElementById("providename").addEventListener("click", function(){ 
+                
+                var person = prompt("Please enter your name:");
+                
+                if (person == null || person == "") {
+                    
+                } else {
+                    
+                    document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your Aroma Coffee experience!"
+                    
+                    createCookie("person", person, 7);
+                    
+                    document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+                }
+            });
+
+            
+            setTimeout(function(){
+                
+                var random = 10 * 5 ;
+                
+                var isNotDivisible = (random%5);
+                
+                if(!isNotDivisible) {
+                    
+                    alert("You have been randomly selected to participate in a customer satisfaction survey.")
+                    
+                    location.href = "4315_Lab1_sxt3215.html"
+                }
+            }, 5000);
+        }
+    </script>
+</head>
+<body>
+    <h1 style="color:rgb(153, 4, 4);">Thank You For Choosing Oven Fresh Bakery</h1>
+    <div class="menuDiv"> 
+        <table class="menuTable">
+        <tr>
+            <td class="menu"><a href="Index.html">Home</a></td>
+            <td><a href="Product_sxt.html">Products</a></td>
+            <td><a href="about_sxt.html">About</a></td>
+            <td><a href="contact_sxt.htm">Contact Us</a></td>
+        </tr>
+        </table>
+</div>
+    <br>
+    <div style="display: flex;">
+            <p style="width: 70%;" >Oven Fresh Bakery started as a morning biscuit with a hot cup of milk tea. Now, Over Fresh Bakery has been serving other baked good categories such as fruit cake, banana bread, doughnuts, bagels, cheese danish, cakes and more kinds of biscuits for almost 32 years. We serve the sweet and strong coffee, chai and latte along with baked goods. Our tea leaves are hand picked in Ilam from Nepal and granulated for tea bags and sealed. Taste the mixture of South Asian tea with your favorite american bagel with a simple click on your items and add it to your cart to get it delivered or pick up in our bakery located in Fort Worth, TX. </p>
+            <img style="width: 25%; height: 15%;"  src="ovenfresh_logo.png" alt="ovenfresh logo" style="width:20%; padding-left:2%; padding-right:2%;">
+    </div>
+    <br><br>
+    <div style="display: flex; width: 70%;">
+        <img style="width: 35%; height: 15%;"  src="baked goods.jpg" alt="baked goods">
+        <div style="width: 70%; margin: 3%;">
+            <p id="personaltext">Want a more personalized experience on our website?</p>
+            <a href="#" id="providename"></a>
+        </div>
+    </div>
+</body>
+</html>
